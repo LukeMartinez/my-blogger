@@ -6,6 +6,7 @@ describe Article do
     article = Article.create(title: "hey")
     article2 = Article.create(title: "hey", body: "this is a body")
     expect(article).to_not be_valid
-    expect(article2).to_not be_valid
+    expect(article2).to be_valid
   end
+
 end
